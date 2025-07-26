@@ -1,0 +1,34 @@
+### GET all tasks
+GET http://localhost:3000/api/v1/task
+
+### GET task by id
+GET http://localhost:3000/api/v1/task/12
+
+
+### POST Task to sending JSON 
+POST http://localhost:3000/api/v1/task
+Content-Type: application/json
+
+{
+  "title": "to finish topics",
+  "description": "general description",
+  "finishDate":"2025-08-01",
+  "status": "finished"
+}
+
+### UPDATE 
+
+PUT  http://localhost:3000/api/v1/task/12
+Content-Type: application/json
+
+{
+  "title": "new topic",
+  "description": "destructure for to beginner and so on ",
+  "finishDate":"2025-08-12",
+  "status": "finished"
+}
+
+
+
+### DELETE
+DELETE  http://localhost:3000/api/v1/task/12
