@@ -3,7 +3,7 @@ services:
   db:
     image: postgres:15
     container_name: postgres_db_nodejs
-    restart: always
+    restart: unless-stopped
     environment:
       POSTGRES_DB: tasksdb
       POSTGRES_USER: admin

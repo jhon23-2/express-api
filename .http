@@ -10,25 +10,24 @@ POST http://localhost:3000/api/v1/task
 Content-Type: application/json
 
 {
-  "title": "to finish topics",
-  "description": "general description",
+  "parameter":"other parameter",
+  "title": "new title",
+  "description": "dd",
   "finishDate":"2025-08-01",
   "status": "finished"
 }
 
 ### UPDATE 
 
-PUT  http://localhost:3000/api/v1/task/12
+PATCH   http://localhost:3000/api/v1/task/124
 Content-Type: application/json
 
 {
-  "title": "new topic",
-  "description": "destructure for to beginner and so on ",
-  "finishDate":"2025-08-12",
-  "status": "finished"
+   "parameter":"other parameter",
+   "description": "DESCRIPTION"
 }
 
 
 
 ### DELETE
-DELETE  http://localhost:3000/api/v1/task/12
+DELETE  http://localhost:3000/api/v1/task/125
